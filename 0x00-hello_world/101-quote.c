@@ -1,11 +1,15 @@
-#include <stdio.h>
-#include <unistd.h>
+#include <stdio,h>
 /**
- * main - A c program that prints a line to the standard error
- * Return 1 (Success)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-int main(void)
+iny main(void)
 {
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",stdout);
-return (1);
+	int i;
+	for (i=0; i < 10; i++)
+		putchar(i +'0');
+	for (i=0; i < 6; i++)
+		putchar(i + 'a');
+	putchar('\n');
+	return (0);
 }
