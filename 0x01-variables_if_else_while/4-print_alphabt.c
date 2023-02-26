@@ -2,20 +2,23 @@
 
 /**
  * main - prints the alphabet in lowercase,
- * followed be a new line,except q and e
+ * followed be a new line, except q and e
  * Return: Always 0 (Success)
  */
-in main(void)
+int main(void)
 {
 	char ch = 'a';
 
-	while (ch < = 'z')
+	while (ch <= 'z')
 	{
-	if (ch != 'e' && ch != 'q')
-	{
-	putchar(ch);
-	}
-	ch++;
+		if (ch != 'e' && ch != 'q')
+		{
+
+			putchar(ch);
+
+		}
+		ch++;
+
 	}
 	putchar('\n');
 	return (0);
